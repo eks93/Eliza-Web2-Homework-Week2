@@ -394,11 +394,20 @@ textarea {
     Footer
 ============= */
 /* =============
+    Hero 1
+============= */
+#hero img {
+  max-width: 100%;
+}
+
+/* =============
     Section 1
 ============= */
 /* =============
     Section 2
 ============= */
-#section-2 img {
-  max-width: 100%;
+#section-2 {
+  display: grid;
+  grid-template-columns: 12px auto 18px 6px 16px;
+  grid-template-areas: ". ";
 }

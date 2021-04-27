@@ -1,6 +1,11 @@
 /* =============
     Base
 ============= */
-h1{
-    font-family: 'Spectral', serif;
+ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
 }

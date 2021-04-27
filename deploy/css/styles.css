@@ -352,8 +352,12 @@ template {
 /* =============
     Base
 ============= */
-h1 {
-  font-family: "Spectral", serif;
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
 }
 
 /* =============
@@ -389,3 +393,12 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Section 1
+============= */
+/* =============
+    Section 2
+============= */
+#section-2 img {
+  max-width: 100%;
+}

@@ -1,0 +1,23 @@
+/* =============
+    Section 5
+============= */
+
+#section-5 {
+    ul {
+        li {
+            img {
+                width: 100%;
+            }
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". section-5-content .";
+
+            div {
+                grid-area: section-5-content;
+            }
+        }
+    }
+}

@@ -387,12 +387,39 @@ textarea {
 /* =============
     Navigation
 ============= */
+#navigation {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". navigation .";
+}
+#navigation > div {
+  grid-area: navigation;
+}
+
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
+}
+
 /* =============
     Footer
 ============= */
+footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero 1
 ============= */
@@ -403,6 +430,10 @@ textarea {
 /* =============
     Section 1
 ============= */
+#section-1 img {
+  width: 100%;
+}
+
 /* =============
     Section 2
 ============= */

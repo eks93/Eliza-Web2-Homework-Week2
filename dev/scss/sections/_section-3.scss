@@ -1,0 +1,17 @@
+/* =============
+    Section 3
+============= */
+
+#section-3 {
+    ul {
+        li {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". section-3-content .";
+
+            div {
+                grid-area: section-3-content;
+            }
+        }
+    }
+}

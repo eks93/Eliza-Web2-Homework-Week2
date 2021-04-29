@@ -1,0 +1,19 @@
+/* =============
+    Section 4
+============= */
+
+#section-4 {
+    ul {
+        display: grid;
+
+        li {
+            img {
+                width: 100%;
+            }
+        }
+
+        #section-4 {
+            display: none;
+        }
+    }
+}

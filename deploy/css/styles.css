@@ -360,6 +360,10 @@ ul li {
   list-style: none;
 }
 
+.hidden {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -416,29 +420,175 @@ footer {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
 }
+@media (min-width: 1200px) {
+  footer {
+    grid-template-columns: auto 120px auto;
+  }
+}
 footer > div {
   grid-area: footer;
+}
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat 2, 1fr;
+    grid-template-areas: "f1 f2" "f1 f3";
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f3 {
+    grid-area: f3;
+  }
 }
 
 /* =============
     Hero 1
 ============= */
-#hero img {
-  max-width: 100%;
+#hero-1 img {
+  width: 100%;
 }
 
 /* =============
     Section 1
 ============= */
-#section-1 img {
-  width: 100%;
+#section-1 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+#section-1 > div {
+  grid-area: search;
+}
+@media (min-width: 1200px) {
+  #section-1 > div {
+    display: grid;
+    grid-template-columns: auto 120px auto;
+    grid-template-areas: ". section-1-content .";
+  }
+}
+@media (min-width: 1200px) and (min-width: 1200px) {
+  #section-1 > div form {
+    grid-area: section-1-content;
+  }
 }
 
 /* =============
     Section 2
 ============= */
-#section-2 {
+#section-2 img {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #section-2 section {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section-2-content .";
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  #section-2 section ul {
+    grid-area: section-2-content;
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 768px) and (min-width: 1024px) {
+  #section-2 section ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 768px) and (min-width: 1200px) {
+  #section-2 section ul {
+    grid-template-columns: auto 120px auto;
+  }
+}
+
+/* =============
+    Section 3
+============= */
+#section-3 {
   display: grid;
-  grid-template-columns: 12px auto 18px 6px 16px;
-  grid-template-areas: ". ";
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section-3 .";
+}
+@media (min-width: 1200px) {
+  #section-3 {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+#section-3 > div {
+  grid-area: section-3;
+}
+@media (min-width: 768px) {
+  #section-3 > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+
+/* =============
+    Section 4
+============= */
+@media (min-width: 768px) {
+  #section-4 ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1200px) {
+  #section-4 ul {
+    grid-template-columns: 70% auto;
+    grid-template-areas: "h2-1 h2-2" "h2-1 h2-3";
+  }
+}
+#section-4 ul li img {
+  width: 100%;
+}
+@media (min-width: 1200px) {
+  #section-4 ul #h2-1 {
+    grid-area: h2-1;
+  }
+}
+@media (min-width: 1200px) {
+  #section-4 ul #h2-2 {
+    grid-area: h2-2;
+  }
+}
+@media (min-width: 1200px) {
+  #section-4 ul #h2-3 {
+    grid-area: h2-3;
+  }
+}
+
+/* =============
+    Section 5
+============= */
+#section-5 ul li img {
+  width: 100%;
+}
+#section-5 ul section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section-5-content .";
+}
+#section-5 ul section div {
+  grid-area: section-5-content;
 }

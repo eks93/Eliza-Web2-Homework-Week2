@@ -7,15 +7,28 @@
         width: 100%;
     }
 
-    ul {
-        li {
+
+    section {
+        @include md {
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". section-2-content .";
 
-            a {
-                grid-area: section-2-content;
+            ul {
+                @include md {
+                    grid-area: section-2-content;
+                    display: grid;
+                    grid-template-columns: 40% auto;
+                }
+
+                @include lg {
+                    grid-template-columns: 50% auto;
+                }
+
+                @include xl {
+                    grid-template-columns: auto 120px auto;
+                }
             }
         }
     }
-
+}

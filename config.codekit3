@@ -164,6 +164,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/section-4\/MermaidStatue.png" : {
+      "ft" : 32768,
+      "iS" : 543685,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/section-4\/MermaidStatue.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/section-4\/MOUNTAINS.png" : {
       "ft" : 32768,
       "iS" : 768445,

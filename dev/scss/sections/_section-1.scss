@@ -3,7 +3,23 @@
 ============= */
 
 #section-1 {
-    img {
-        width: 100%;
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". search .";
+
+    >div {
+        grid-area: search;
+
+        @include xl {
+            display: grid;
+            grid-template-columns: auto 120px auto;
+            grid-template-areas: ". section-1-content .";
+
+            form {
+                @include xl {
+                    grid-area: section-1-content;
+                }
+            }
+        }
     }
 }
